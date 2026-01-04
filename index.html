@@ -1,46 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  <title>我的小游戏网站</title>
+  <meta charset="UTF-8">
+  <title>在线听音乐</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
       text-align: center;
-      font-family: Arial;
+      padding: 40px;
     }
     h1 {
-      font-size: 36px;
+      color: #333;
+    }
+    .player {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 400px;
+      margin: auto;
+    }
+    audio {
+      width: 100%;
       margin-top: 20px;
-    }
-    button {
-      font-size: 24px;
-      padding: 12px 30px;
-      margin: 20px;
-    }
-    nav {
-      margin-top: 50px;
-    }
-    a {
-      font-size: 20px;
-      text-decoration: none;
-      margin: 20px;
-      padding: 12px 20px;
-      background-color: #4CAF50;
-      color: white;
-      border-radius: 8px;
     }
   </style>
 </head>
 <body>
 
-  <h1>欢迎来到我的小游戏网站</h1>
-  
-  <nav>
-    <a href="game.html">进入游戏 🎮</a>
-    <a href="about.html">关于我</a>
-  </nav>
+  <h1>🎵 我的音乐播放器</h1>
 
-  <p>这是我的第一个在线小游戏网站，点击下方进入游戏！</p>
+  <div class="player">
+    <p>正在播放：</p>
+    <strong>示例音乐</strong>
+
+    <audio controls>
+      <source src="music.mp3" type="audio/mpeg">
+      你的浏览器不支持 audio 标签
+    </audio>
+  </div>
 
 </body>
 </html>
