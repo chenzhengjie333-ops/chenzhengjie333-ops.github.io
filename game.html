@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>小游戏</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+    }
+    button {
+      font-size: 24px;
+      padding: 12px 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎮 点我小游戏</h1>
+  <p>你已经点了 <span id="count">0</span> 次</p>
+  <button onclick="add()">点我</button>
+
+  <p style="margin-top:30px;">
+    <a href="index.html">⬅ 返回首页</a>
+  </p>
+
+  <script>
+    let count = 0;
+    function add() {
+      count++;
+      document.getElementById("count").innerText = count;
+    }
+  </script>
+
+</body>
+</html>
